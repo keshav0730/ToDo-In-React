@@ -1,88 +1,127 @@
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
     padding: 0;
-    font-family: "Jost", sans-serif;
-    }
-    
-    body {
-    background: #455a79;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    margin: 0;
+    /* background-color: #d2dbdd; */
+    font-family: "Josefin Sans","Arial Narrow",Arial,sans-serif;
+}
+
+.main_div{
+    width: 100%;
     height: 100vh;
-    width: 100vw;
-    font-family: "Jost", sans-serif;
-    }
-    
-    
-    html {
-    font-size: 100%;
-    height: 100%;
-    }
-    
-    .input {
-    font-family: 'Noto Serif KR', sans-serif;
-    width: 300px;
-    height: 25px;
-    color: black;
-    word-spacing: 2px;
-    margin: auto;
-    display: block;
-    
-    }
-    
-    .borderCss {
-    width: 400px;
-    height: 200px;
-    border-width: 2px;
-    background-color: rgb(36, 143, 243);
-    border-style: none;
-    border-radius: 25px;
-    padding-top: 70px;
-    }
-    
-    .lab{
+    background-color: #6983aa;
     display: flex;
-    font-family: "Jost", sans-serif;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+}
+.center_div{
+    width: 25%;
+    height: 80vh;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 25px -5px  rgba(0,0,0,0.5); 
+}
+h1{
     color: white;
+    background-color: transparent;
+    background-color: #8566aa;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0,0, 0.3);
+
     }
-    
-    .btn{
-    background-color: white;
+
+input{
+    text-align: center;
+    height: 30px;
+    top: 10px;
     border: none;
-    color: black;
-    padding: 10px 22px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    }
-    
-    .nav1 {
-    width: 100px;
-    height: 60px;
-    background-color: rgb(36, 143, 243);
-    border-style: none;
-    border-radius: 25px;
-    position: absolute;
-    left: 100px;
-    }
-    
-    .nav2 {
-    width: 200px;
-    height: 50px;
-    border-width: 2px;
-    background-color: rgb(36, 143, 243);
-    border-style: none;
-    border-radius: 25px;
-    padding-top: 70px;
-    position: relative;
-    right: 0;
-    }
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid #8566aa;
+    outline: none;
+}
+button{
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #8566aa;
+    color: #fff;
+    font-size: 40px;
+    border: none;
+    outline: none;
+     margin-left:10px ;
+     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+
+}
+
+button:hover{
+    background-color: #20bf6b;
+}
+ol{
+    margin-top: 30px;
+}
+ol li{
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #8586aa;
+    text-transform: capitalize;
+
+
+}
+.todo_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.todo_style .fa_items{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8566aa;
+    border-radius: 50%;
+    margin: 0px 15px 0 35px;
+    color: aliceblue;
+
+}
+.todo_style .fa_items:hover{
+    background-color: crimson;
+
+}
+.todo_style .fa_items:hover .list_style{
+    color: crimson;
+}
+@media  (max-width:786px){
+     .center_div{
+         width: 55%;
+     } 
+     .todo_style .fa_items{
+         margin: 0 15px  0 15px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+     }
+     button{
+         margin-left: 5px;
+         min-height: 40px;
+         width: 40px;
+         color: #fff;
+         font-size: 30px;
+     }
+}
