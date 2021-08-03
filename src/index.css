@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+    }
+    
+    body {
+    background: #455a79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Jost", sans-serif;
+    }
+    
+    
+    html {
+    font-size: 100%;
+    height: 100%;
+    }
+    
+    .input {
+    font-family: 'Noto Serif KR', sans-serif;
+    width: 300px;
+    height: 25px;
+    color: black;
+    word-spacing: 2px;
+    margin: auto;
+    display: block;
+    
+    }
+    
+    .borderCss {
+    width: 400px;
+    height: 200px;
+    border-width: 2px;
+    background-color: rgb(36, 143, 243);
+    border-style: none;
+    border-radius: 25px;
+    padding-top: 70px;
+    }
+    
+    .lab{
+    display: flex;
+    font-family: "Jost", sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    }
+    
+    .btn{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 22px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    }
+    
+    .nav1 {
+    width: 100px;
+    height: 60px;
+    background-color: rgb(36, 143, 243);
+    border-style: none;
+    border-radius: 25px;
+    position: absolute;
+    left: 100px;
+    }
+    
+    .nav2 {
+    width: 200px;
+    height: 50px;
+    border-width: 2px;
+    background-color: rgb(36, 143, 243);
+    border-style: none;
+    border-radius: 25px;
+    padding-top: 70px;
+    position: relative;
+    right: 0;
+    }
