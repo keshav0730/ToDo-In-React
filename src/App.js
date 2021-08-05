@@ -10,7 +10,10 @@ const App=()=>
             setInputList(event.target.value)
     }
       const listOfItems=()=>{
-
+          setItems((oldItems)=>{
+              return [...oldItems,inputList]
+          })
+          setInputList("")
       }
      return(
          <> 
@@ -20,11 +23,14 @@ const App=()=>
 
                  <h1>ToDo List</h1>
                  <br />
-                 <input type="text" placeholder="Add a Items" onChange={itemEvent} />
+                 <input type="text" placeholder="Add a Items" value={inputList} onChange={itemEvent} />
                  <button  onClick={listOfItems}>+</button>
                  <ol>
                      
-                     items.map( )
+                    { items.map((itemval)=>{
+                         return <li>{itemval}</li>
+                     } )
+                    }
                  </ol>
              </div>
 
